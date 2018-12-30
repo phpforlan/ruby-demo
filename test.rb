@@ -1,14 +1,17 @@
 class Test
-  def test
-    puts "hello world"
+
+  @@from = "China" #类变量
+
+  def color= color
+    @color = color #实例变量
   end
 
-  def say
-    "say something"
+  def color
+    @color
   end
 
 end
 
-Test.new.test
-word = Test.new.say
-puts(word)
+test_obj = Test.new
+puts test_obj
+
