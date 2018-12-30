@@ -2,16 +2,26 @@ class Test
 
   @@from = "China" #类变量
 
+  def get_from
+    @@from
+  end
+
+  def set_from from
+    @@from = from
+  end
+
   def color= color
-    @color = color #实例变量
+    @my_color = color
   end
 
   def color
-    @color
+    @my_color
   end
 
 end
 
 test_obj = Test.new
-puts test_obj
+test_obj.color = "red"
+puts test_obj.color
+
 
